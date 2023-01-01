@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #box{
+        display: flex;
+    flex-direction: column;
+    }
+    #head{
+        display: flex;
+        background-color: aquamarine;
+    }
+    #logo{
+        width: 10%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #cbse{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #form{
+        height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    #form table{
+        width: 60%;
+    }
+    .info{
+        width: 50%;
+    }
+    .input{
+        width: 90%;
+    }
+    #red{
+        color: red;
+    }
+    .blue:focus{
+        border-color: #66afe9;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+
+        outline: none;
+
+    }
+    .blue{
+        border: 1px solid black;
+        outline: none;
+        border-radius: 4px;
+        padding: .3rem .2rem;
+        transition: all  ease .3s;
+        
+    }
+    th td{
+        padding: .2rem;
+    }
+    #button{
+        text-align: center;
+    }
+    #button button{
+        padding: .1rem .3rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        border: black solid 1px;
+        transition: all  ease .3s;
+    }
+    #button button:hover{
+        background-color: black;
+        color: white;
+        box-shadow: 0px 0px .3rem red ;
+    }
+    #form th{
+        color: rgb(2, 2, 182);
+    }
+</style>
+<body>
+    <div id="box">
+        <div id="head">
+            <div id="logo">
+                <img src="1.png" alt="img not loaded">
+            </div>
+            <div id="cbse">
+                <h1>CENTRAL BOARD OF SECONDARY EDUCATION</h1>
+            </div>
+        </div>
+
+
+        <div id="form">
+            <table>
+                <tr>
+                    <th colspan="2">Senior School Certificate Examination (Class XII) Results 20XX</th>
+                </tr>
+                <tr>
+                    <td class="info">Enter Your Roll Number</td>
+                    <td><input class="input blue" type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td class="info">Enter School No.</td>
+                    <td><input class="input blue" type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td class="info">Enter Center No.</td>
+                    <td><input class="input blue" type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td class="info">Enter Admit Card ID.</td>
+                    <td><input class="input blue" type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td id="red" colspan="2">(as given on your admit card)</td>
+                </tr>
+                <tr id="button">
+                    <td colspan="2">
+                        <button>Submit</button>
+                        <button>Reset</button>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

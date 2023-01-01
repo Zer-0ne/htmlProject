@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: whitesmoke;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .heading {
+        width: 100%;
+        font-size: 3rem;
+        margin: 1rem 0rem;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        background: aqua;
+        padding: 0.5rem 0rem;
+        justify-content: center;
+        box-shadow: 0px 0px 12px 13px cyan;
+        text-shadow: 0px 0px 14px yellowgreen;
+    }
+
+    .list {
+        display: flex;
+        justify-content: center;
+        max-width: 90%;
+        align-items: center;
+        align-content: center;
+        margin: 2rem 0rem;
+        flex-direction: column;
+    }
+
+    .list ul {
+        max-width: 100%;
+        display: flex;
+    }
+
+    .list li {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        margin: 0px 10px;
+        max-width: 15%;
+        align-items: center;
+    }
+
+    .list li img {
+        width: 2;
+        width: 23%;
+        border-radius: 50%;
+        border: 2px solid white, 3px solid black;
+        box-shadow: 0px 0px 1px 2px white, 0px 0px 3px 2px black;
+    }
+
+    .list li h4 {
+        font-size: 1.3rem;
+    }
+
+    .cards {
+        display: flex;
+        margin: 1rem 0rem;
+        width: 88%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .books {
+        width: 100%;
+        transition: all .3s ease;
+        box-shadow: 0px 0px 6px grey;
+        display: flex;
+        border-radius: 6px;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+    }
+
+    .books:hover {
+        box-shadow: 0px 0px 5px #00b2ff;
+        border-color: #00b2ff #00b2ff #00b2ff;
+    }
+
+    .img {
+        width: 6%;
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    }
+
+    .img img {
+        width: 100%;
+        z-index: 9;
+        transition: all .3s ease-in-out;
+    }
+
+    .img img:hover{
+        z-index: 10;
+    position: absolute;
+    width: 16%;
+    box-shadow: 0px 0px 14px 3px grey;
+    border-radius: 4px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: 4px 7px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .content h3 {
+        font-size: 1.3rem;
+
+    }
+
+    .green {
+        color: green;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .prev_next {
+        display: flex;
+        justify-content: center;
+        margin: 0rem 0rem 1rem;
+        text-decoration: none;
+        align-content: center;
+        align-items: center;
+    }
+
+    .prev_next a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+        transition: all .3s ease;
+        padding: 0rem 1rem;
+        /* margin: 0rem 1rem; */
+    }
+
+    .prev_next a:hover {
+        font-size: 4rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        background: black;
+        color: white;
+    }
+</style>
+
+<body>
+    <section class="container">
+        <div class="heading">
+            <h1>Trending eBooks about Software</h1>
+        </div>
+        <div class="list">
+            <ul>
+                <li><img src="https://www.pdfdrive.com/assets/img/cat/48.jpg.pagespeed.ce.y-UGNoOc5R.jpg" alt="">
+                    <h4>Software</h4>
+                </li>
+                <li><img src="https://www.pdfdrive.com/assets/img/cat/60.jpg.pagespeed.ce.KetiaYrtWD.jpg" alt="">
+                    <h4>Internet</h4>
+                </li>
+                <li><img src="https://www.pdfdrive.com/assets/img/cat/62.jpg.pagespeed.ce.PvfjC0-qg_.jpg" alt="">
+                    <h4>Hardware</h4>
+                </li>
+                <li><img src="https://www.pdfdrive.com/assets/img/cat/63.jpg.pagespeed.ce.NTm5LuQx77.jpg" alt="">
+                    <h4>Programming</h4>
+                </li>
+                <li><img src="https://www.pdfdrive.com/assets/img/cat/64.jpg.pagespeed.ce.T6wA9PYI9h.jpg" alt="">
+                    <h4>Web Design</h4>
+                </li>
+                <li><img src="https://www.pdfdrive.com/assets/img/cat/65.jpg.pagespeed.ce.akYbbZji67.jpg" alt="">
+                    <h4>Tutorials</h4>
+                </li>
+                <li><img src="https://www.pdfdrive.com/assets/img/cat/109.jpg.pagespeed.ce.Mxd_jiduYp.jpg" alt="">
+                    <h4>Automotive</h4>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cards">
+            <div class="books">
+                <div class="img">
+                    <img src="https://cdn.asaha.com/assets/thumbs/3e0/3e0e35e2305c83820e7f7375aaabe6e0-s.jpg"
+                        alt="img not loaded">
+                </div>
+                <div class="content">
+                    <h3>Web Design with HTML and CSS</h3>
+                    <p class="green">307 Pages 2011 24.12 MB 303,678 Downloads</p>
+                    <p>Web Design with HTML and CSS Digital Classroom. Published by Wiley Publishing. Inc 10475
+                        Crosspoint</p>
+                </div>
+            </div>
+
+            <div class="books">
+                <div class="img">
+                    <img src="https://cdn.asaha.com/assets/thumbs/a18/a18fcb4886ec0e3bfc7854570a8776a2.jpg"
+                        alt="img not loaded">
+                </div>
+                <div class="content">
+                    <h3>Data Analysis with Microsoft Excel</h3>
+                    <p class="green">613 Pages 2010 10.55 MB 319,855 Downloads</p>
+                    <p>Analysis with Microsoft Excel. Updated for office 2007. kenneth N. Berk. illinious State University ...</p>
+                </div>
+            </div>
+
+            <div class="books">
+                <div class="img">
+                    <img src="https://cdn.asaha.com/assets/thumbs/e1e/e1ec7abe963086aec83a0335c51d2fce-s.jpg"
+                        alt="img not loaded">
+                </div>
+                <div class="content">
+                    <h3>PHP,MYSQL, JavaScript & HTML 5 All-In-one For Dummies</h3>
+                    <p class="green">724 Pages 2013 13.86 MB 240,600 Downloads</p>
+                    <p>included with standard print versions of this book may not be included in Book I: Getting Satrted with PHP</p>
+                </div>
+            </div>
+
+            <div class="books">
+                <div class="img">
+                    <img src="https://cdn.asaha.com/assets/thumbs/14a/14a098772692e961057750876de07277.jpg"
+                        alt="img not loaded">
+                </div>
+                <div class="content">
+                    <h3>Hacking For Dummies, 3rd Edition</h3>
+                    <p class="green">411 Pages 2009 8.57 MB 175,170 Downloads</p>
+                    <p>has also been referenced by the PCI Council in their Data Security Standard Wireless katalov with</p>
+                </div>
+            </div>
+
+            <div class="books">
+                <div class="img">
+                    <img src="https://cdn.asaha.com/assets/thumbs/bb3/bb394f5e6d24d9e18a574df6a70a22a3-s.jpg"
+                        alt="img not loaded">
+                </div>
+                <div class="content">
+                    <h3>Mastering Photoshop for Web Design</h3>
+                    <p class="green">216 Pages 2011 13.46 MB 175,271 Downloads</p>
+                    <p>details such as subtitle textures, shading and smooth shapes. Photoshop. It's possible to automate the</p>
+                </div>
+            </div>
+
+            <div class="books">
+                <div class="img">
+                    <img src="https://cdn.asaha.com/assets/thumbs/c6b/c6b6722d830ac18bed8cc004c173e24d-s.jpg"
+                        alt="img not loaded">
+                </div>
+                <div class="content">
+                    <h3>COMPUTER HARDWARE AND SOFTWARE</h3>
+                    <p class="green">81 Pages 2008 1.38 MB 78.164 Downloads</p>
+                    <p>Personal productivity software - helps you performe personal tasks ...</p>
+                </div>
+            </div>
+
+            <div class="books">
+                <div class="img">
+                    <img src="https://cdn.asaha.com/assets/thumbs/e25/e25e776edda5e399b5d9713caeacd74c-s.jpg"
+                        alt="img not loaded">
+                </div>
+                <div class="content">
+                    <h3>Building Arduino Project for the Internet of Things</h3>
+                    <p class="green">299 Pages 2016 16.9 MB 126,394 Downloads</p>
+                    <p>Downloads Book (PDF, 17281 KB), Book 2016, Building Arduino Project for the Internet Things</p>
+                </div>
+            </div>
+
+            <div class="books">
+                <div class="img">
+                    <img src="https://cdn.asaha.com/assets/thumbs/79e/79ea93c34bd22addc10d87f1fc5e6465-s.jpg"
+                        alt="img not loaded">
+                </div>
+                <div class="content">
+                    <h3>PRACTICAL MATLAB FOR ENGINEERS PRATICAL MATLAB</h3>
+                    <p class="green">708 Pages 2008 7.23 MB 75,511 Downloads</p>
+                    <p>Professor of Electrical and Telecommunication Engerring Technology New York This book use or</p>
+                </div>
+            </div>
+
+            <div class="books">
+                <div class="img">
+                    <img src="https://cdn.asaha.com/assets/thumbs/435/435ebf44f65ab314be717cc2169c553a-s.jpg"
+                        alt="img not loaded">
+                </div>
+                <div class="content">
+                    <h3>Python Programming: An Introduction to Computer Science</h3>
+                    <p class="green">261 Pages 2012 12 MB 139,276 Downloads</p>
+                    <p>Python Programming: An introduction to computer Science John M. Zelle, Ph.D version 1orc2 fall 2002 ...</p>
+                </div>
+            </div>
+
+            <div class="books">
+                <div class="img">
+                    <img src="https://cdn.asaha.com/assets/thumbs/90a/90a131f9da39985cfa1cbbee463d91a5-s.jpg"
+                        alt="img not loaded">
+                </div>
+                <div class="content">
+                    <h3>Pro HTML5 and CSS3 Design Patterns</h3>
+                    <p class="green">514 Pages 2011 11.68 MB 82,501 Downloads</p>
+                    <p>This book unleashes your productivity and creativity in web design and development Design We assume</p>
+                </div>
+            </div>
+
+            <div class="books">
+                <div class="img">
+                    <img src="https://cdn.asaha.com/assets/thumbs/e05/e058dea0fa313848d2d5c8fa28d155e6-s.jpg"
+                        alt="img not loaded">
+                </div>
+                <div class="content">
+                    <h3>Game Engine Architecture</h3>
+                    <p class="green">853 Pages 2009 11.96 MB 46,521 Downloads</p>
+                    <p>International Standard Book Number-13: 978-1-4398-6526-2 (Ebook-PDF)</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="prev_next">
+            <a href="#">«</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">»</a>
+        </div>
+    </section>
+    <footer>Copyright 2018-2022 Sahil Khan - All rights reserved.</footer>
+</body>
+
+</html>

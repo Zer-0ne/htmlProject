@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/549f321b97.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    .contact {
+        width: 81%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        /* align-items: center; */
+        margin: 3rem 0rem;
+        box-shadow: 0px 0px 10px grey;
+        border-radius: 5px;
+        padding: 2rem;
+        transition: all .5s ease;
+    }
+
+    .contact:hover {
+        box-shadow: -3px -3px 10px 1px blue, 3px 3px 10px 1px red;
+        /* background-color: black;
+        color: white; */
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact ul {
+        list-style: none;
+    }
+
+    .contact li {
+        display: flex;
+        align-content: center;
+        margin: 1rem 0rem;
+        align-self: center;
+        align-content: center;
+    }
+
+    .contact li i {
+        align-items: center;
+        margin: 0rem 1rem;
+        font-size: 1.5rem;
+        align-content: center;
+        align-self: center;
+    }
+
+    .contact li h3 {
+        font-size: 1.5rem;
+    }
+
+
+    .app {
+        display: inline;
+        font-size: .8px;
+    }
+
+    .ap {
+        display: flex;
+
+    }
+
+    .ap span {
+        margin: 0rem .2rem;
+        border: 1px solid gray;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .detail li {
+        display: list-item;
+        margin: .1rem 0rem;
+        margin-left: 3rem;
+    }
+
+    .detail table {
+        margin: 1rem 0rem;
+    }
+
+    .detail h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0rem .5rem;
+
+    }
+
+    .detail h1 {
+        font-size: 2rem;
+        margin: .1rem 0rem .5rem;
+        color: blue;
+    }
+
+    .detail {
+        margin: .5rem 0rem;
+    }
+
+    .detail table td h2 {
+        color: blue;
+    }
+</style>
+
+<body>
+    <section class="container">
+        <div class="logo">
+            <img src="http://jamiahamdard.edu/images/top-logo.png" alt="Img not loaded please reload the page">
+
+        </div>
+        <div class="contact">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i>
+                    <h3>Hamdard Nagar,Delhi, Delhi 110062, India</h3>
+                </li>
+                <li><i class="fa-solid fa-phone"></i>
+                    <h3>(011) 26059688</h3>
+                </li>
+                <li><i class="fa-solid fa-envelope"></i>
+                    <h3>(011) 26059663</h3>
+                </li>
+                <li><i class="fa-solid fa-envelope"></i>
+                    <h3>mibrahim@jamiahamdard.ac.in</h3>
+                </li>
+                <li><i class="fa-brands fa-firefox"></i>
+                    <h3>University Website</h3>
+                </li>
+            </ul>
+            <div class="ap">
+
+                <h2 class="app">Approved By: </h2><span>UGC</span><span>NAAC</span>
+            </div>
+        </div>
+        <div class=" contact detail">
+            <h1>B.C.A</h1>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <td>
+                        <h4>Duration</h4>
+                        <h2>3 Years</h2>
+                    </td>
+                    <td>
+                        <h4>Eligibility</h4>
+                        <h2>10+2 or Equivalent</h2>
+                    </td>
+                </tr>
+            </table>
+            <h3>Course Details</h3>
+            <h4>Semester - I</h4>
+            <ol type="">
+                <li>Introduction to Computer and IT</li>
+                <li>Programming in C</li>
+                <li>Mathematics-I</li>
+                <li>Organization Skills</li>
+                <li>Lab(Advanced DOS,PC Software, MS Office etc.)</li>
+                <li>Communication Skills</li>
+                <li>Lab (C Programming)</li>
+            </ol>
+            <h4>Semester - II</h4>
+            <ol>
+                <li>Introduction to Data Structures</li>
+                <li>Computer organization</li>
+                <li>Mathematics-II</li>
+                <li>Computer based FInancial Accounting & Management</li>
+                <li>Lab (Data Structure)</li>
+                <li>Lab (BDP & FS using COBOL/Visual FOXPRO)</li>
+                <li></li>
+            </ol>
+            <h4>Semester - III</h4>
+            <ol>
+                <li>Numerical Methods & Statistical techniques</li>
+                <li>Fundamental concepts of operating System</li>
+                <li>Introduction to Object Oriented Programming Using C++</li>
+                <li>System Programming concept & Compiler Design</li>
+                <li>System Analysis & design</li>
+                <li>Lab (C++)</li>
+                <li>Lab (Numerical & Statistical method using 'C')</li>
+            </ol>
+            <h4>Semester - IV</h4>
+            <ol>
+                <li>Software Engineering & Quality Assurance</li>
+                <li>Introduction to DBMS & Oracel</li>
+                <li>Management Information System</li>
+                <li>Introduction to UNIX & WIN NT</li>
+                <li>Data Communication & Computer Networks</li>
+                <li>Lab (Oracle)</li>
+                <li>Lab (UNIX & WIN NT)</li>
+            </ol>
+            <h4>Semester - V</h4>
+            <ol>
+                <li>Software Engineering & Quality Assurance</li>
+                <li>Visual Language Programming</li>
+                <li>Internet Technologies and Applications & e-commerce</li>
+                <li>Elective - I</li>
+                <li>Elective - II</li>
+                <li>Lab (Computer Graphics)</li>
+                <li>Electives</li>
+            </ol>
+            <ul type="disc">
+                <li>
+                    <ul>
+                        <li>Object Oriented Methodology and UML</li>
+                        <li>Network Programming</li>
+                        <li>Advanced DBMS</li>
+                        <li>Parallel Processing</li>
+                        <li>Artificial Intelligence</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4>Semester - VI</h4>
+            <ul>
+                <li>Industry Project 500</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

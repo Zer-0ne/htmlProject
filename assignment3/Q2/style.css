@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.external_css{
+    margin: 2rem 1rem;
+    border: solid blue 1px;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 18px blue;
+    padding: 2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: blue;
+    }
